@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Añade esta línea para definir las rutas para el controlador de usuarios
+  resources :users
 end
