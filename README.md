@@ -1,24 +1,32 @@
-# README
+#
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta es una aplicación de Ruby on Rails que incluye un sistema de autenticación de usuarios utilizando Devise, así como funcionalidades CRUD para gestionar usuarios.
 
-Things you may want to cover:
+## Requisitos previos
 
-* Ruby version
+- Ruby 3.x
+- Rails 7.2.1
+- SQLite3 (por defecto, para desarrollo)
+- Node.js y Yarn (para la gestión de dependencias de JavaScript)
 
-* System dependencies
+## Instalación
 
-* Configuration
+1. **Clona el repositorio**:
 
-* Database creation
+   ```bash
+   git clone https://github.com/tu_usuario/ingweb.git
+   cd ingweb
 
-* Database initialization
+2. Instala las gemas necesarias:
 
-* How to run the test suite
+	bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Configura la base de datos:
 
-* Deployment instructions
+	
+rails db:create db:migrate
+4.Inicia el servidor de desarrollo:
 
-* ...
+	rails server
+
+La aplicación estará disponible en http://localhost:3000.

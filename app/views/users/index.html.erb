@@ -1,5 +1,13 @@
 <h1>Users</h1>
 
+<% if user_signed_in? %>
+  <p>Estás autenticado como <%= current_user.email %></p>
+  <%= button_to 'Cerrar sesión', destroy_user_session_path, method: :delete, data: { turbo: false, confirm: '¿Estás seguro de que deseas cerrar sesión?' } %>
+<% else %>
+  <p>No estás autenticado</p>
+<% end %>
+
+
 <table>
   <thead>
     <tr>
